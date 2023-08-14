@@ -1,7 +1,7 @@
 <?php
 
     // id , Fokontany , Kaominina, Distrika, Region, Province
-    $table = [ [], [], [], [] ];
+    $table = [ [], [], [], [], [], [] ];
     $title;
     $file = fopen("./assets/data.csv", "r");
 
@@ -19,12 +19,12 @@
         $row = fgetcsv($file, null, ";");
 
         // ON copie la ligne dans data
-        $table[$index][0] = $row[0];
-        $table[$index][1] = $row[1];
-        $table[$index][2] = $row[2];
-        $table[$index][3] = $row[3];
-        $table[$index][4] = $row[4];
-        $table[$index][5] = $row[5];
+        $table[$index][0] = $row[0]; // id
+        $table[$index][1] = $row[1]; // Fokontany
+        $table[$index][2] = $row[2]; // KAOMININA 
+        $table[$index][3] = $row[3]; // Distrika
+        $table[$index][4] = $row[4]; // Regioon
+        $table[$index][5] = $row[5]; // Province
 
         // On incremente la position la taille du tableau
         ++$index;
