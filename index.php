@@ -113,6 +113,11 @@
         return $results;
     }
 
+    /**
+     * @param Array $table tableau dans lequel on fait la recherche
+     * @param string $value le province a rechercher
+     * @return Array $results liste des data qui a le meme province trouve
+     */
     
     function rechercheProvince($table, string $value) { // cad table[indice] [2]
         // On transforme value en miniscule
