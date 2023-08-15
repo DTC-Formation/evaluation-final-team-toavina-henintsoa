@@ -30,6 +30,110 @@
         ++$index;
     }
     fclose( $file );
+
+    function rechercheFokontany( $table, string $value) { // cad table[indice] [1]
+        //Pour stocker les resultats trouves
+        $results = [];
+
+        // Position du resultat dans le tableau
+        $counter = 0;
+
+        for ($i = 0; $i <count($table); ++$i ) {
+            if ( $table[$i] [1] === $value) {
+                $results [$counter] = $table[$i];
+
+                // On incremente la position
+                $counter++;
+            }
+        }
+
+        return $results;
+    }
+
+    function rechercheDistrika($table, string $value) { // cad table[indice] [2]
+        // On transforme value en miniscule
+        // $value = 
+        //Pour stocker les resultats trouves
+        $results = [];
+
+        // Position du resultat dans le tableau
+        $counter = 0;
+
+        for ($i = 0; $i <count($table); ++$i ) {
+            if ( $table[$i] [3] === $value) {
+                $results [$counter] = $table[$i];
+
+                // On incremente la position
+                $counter++;
+            }
+        }
+        
+        return $results;
+    }
+
+    function rechercheRegion($table, string $value) { // cad table[indice] [2]
+        // On transforme value en miniscule
+        // $value = 
+        //Pour stocker les resultats trouves
+        $results = [];
+
+        // Position du resultat dans le tableau
+        $counter = 0;
+
+        for ($i = 0; $i <count($table); ++$i ) {
+            if ( $table[$i] [4] === $value) {
+                $results [$counter] = $table[$i];
+
+                // On incremente la position
+                $counter++;
+            }
+        }
+        
+        return $results;
+    }
+
+    function rechercheKaominina($table, string $value) { // cad table[indice] [2]
+        // On transforme value en miniscule
+        // $value = 
+        //Pour stocker les resultats trouves
+        $results = [];
+
+        // Position du resultat dans le tableau
+        $counter = 0;
+
+        for ($i = 0; $i <count($table); ++$i ) {
+            if ( $table[$i] [2] === $value) {
+                $results [$counter] = $table[$i];
+
+                // On incremente la position
+                $counter++;
+            }
+        }
+        
+        return $results;
+    }
+
+    
+    function rechercheProvince($table, string $value) { // cad table[indice] [2]
+        // On transforme value en miniscule
+        // $value = 
+        //Pour stocker les resultats trouves
+        $results = [];
+
+        // Position du resultat dans le tableau
+        $counter = 0;
+
+        for ($i = 0; $i <count($table); ++$i ) {
+            if ( $table[$i] [5] === $value) {
+                $results [$counter] = $table[$i];
+
+                // On incremente la position
+                $counter++;
+            }
+        }
+        
+        return $results;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -43,11 +147,7 @@
 <body>
     <div class="card">
         <?php
-            for ($i=0; $i<count($table); $i++) {
-                for ($j=0; $j<6; $j++)
-                    echo $table[$i][$j] . " ";
-                echo '<br>';
-            }
+            print_r(rechercheKaominina($table, 'Soamanonga'));
         ?>
         
     </div>
