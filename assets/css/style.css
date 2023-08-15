@@ -1,0 +1,54 @@
+body{
+	margin: 0px!important;
+}
+.row{
+	margin: 20px;
+}
+.wrapper{
+	position: relative;
+}
+.sidebar{
+	position: fixed;
+	width:10%;
+	height: 100%;
+	padding: 10px 0;    
+}
+.navbar-brand{
+	color:white;
+}
+
+@media only screen and (max-width:600px){
+	.sidebar{
+		position: fixed;
+		width:22%;
+		height: 100%;
+		padding: 10px 0; 
+		 
+	}
+	#content-list{
+		position: relative;
+	}
+}
+@media only screen and (min-width:768px){
+	.sidebar{
+		position: fixed;
+		width:14%;
+		height: 100%;
+		padding: 10px 0; 
+	}
+	#content-list{
+		position: relative;
+	}
+}
+@media only screen and (min-width:992px){
+	.sidebar{
+		position: fixed;
+		width:12%;
+		height: 100%;
+		padding: 10px 0; 
+	}
+	#content-list{
+		position: relative;
+
+	}
+}
