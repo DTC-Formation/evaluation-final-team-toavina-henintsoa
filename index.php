@@ -1,6 +1,6 @@
 <?php
 
-    // id , Fokontany , Kaominina, Distrika, Region, Province
+    // Id , Fokontany , Kaominina, Distrika, Region, Province
     $table = [ [], [], [], [], [], [] ];
     $title;
     $file = fopen("./assets/data.csv", "r");
@@ -29,9 +29,27 @@
         // On incremente la position la taille du tableau
         ++$index;
     }
-
     fclose( $file );
-
-    print_r( $title );
-    print_r( $table );
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <?php
+            for ($i=0; $i<count($table); $i++) {
+                for ($j=0; $j<6; $j++)
+                    echo $table[$i][$j] . " ";
+                echo '<br>';
+            }
+        ?>
+        
+    </div>
+</body>
+</html>
