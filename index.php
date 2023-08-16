@@ -82,6 +82,10 @@
 	
 	
 	<!-- =======  End Header ======= -->
+    <div id="container-loader">
+        <div id="loader"></div>
+    </div>
+    
 
 </body>
 
