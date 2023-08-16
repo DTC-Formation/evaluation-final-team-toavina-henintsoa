@@ -73,6 +73,7 @@
                         <?php
                             if (isset($_GET['search']))
                             {
+                                $counterResults = 0;
                                 $search = $_GET['search'];
                                 for ($line=0; $line < count($table); $line++)
                                 {
@@ -83,7 +84,12 @@
                                             echo '<td>' . $table[$line][$column]. '</td>';                           
                                         }
                                         echo '</tr>';
+                                        $counterResults++;
                                     }
+                                }
+                                if ( $counterResults > 0)
+                                {
+                                    echo '<div id="valiny"> Valiny ' . $counterResults . ' no hita </div>';
                                 }
                             }
                             
@@ -93,10 +99,6 @@
                 </div>
             </div>
         </div>
-
-
-        
-        
 
     </div>
     
