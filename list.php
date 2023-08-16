@@ -72,13 +72,21 @@
                         
                         <?php
                             if (isset($_GET['search']))
-                            for ($line=0; $line < count($table); $line++) {
-                                echo '<tr>';
-                                for ($column=0; $column <6; $column++) {
-                                    echo '<td>' . $table[$line][$column]. '</td>';                           
+                            {
+                                $search = $_GET['search'];
+                                for ($line=0; $line < count($table); $line++)
+                                {
+                                    if ( in_array($search, $table[$line]) ){
+                                        echo '<tr>';
+                                        for ($column=0; $column <6; $column++)
+                                        {
+                                            echo '<td>' . $table[$line][$column]. '</td>';                           
+                                        }
+                                        echo '</tr>';
+                                    }                                    
                                 }
-                                echo '</tr>';
                             }
+                            
                         ?>
                         </tbody>
                       </table>
