@@ -48,7 +48,7 @@
             <div class="row ">
                 <div class="col-lg-4 col-md-4 col-xs-6 offset-lg-4 offset-md-3 offset-xs-3 ">
                     <form class="d-flex" method="GET" role="search">
-                        <input class="form-control me-2" name="search" type="search">
+                        <input class="form-control me-2" name="search" type="search" placeholder="Soraty eo ny toerana ho tadiavina">
                         <button class="btn btn-outline-dark" type="submit"><span class="bi bi-search"></span></button>
                       </form>
                 </div>
@@ -89,9 +89,8 @@
                                 }
                                 if ( $counterResults > 0)
                                 {
-                                    echo '<div id="nbr-recherche"> Valiny ' . $counterResults . ' no hita </div>';
-                                    echo '<div id="nbr-page"> Isan\' ny pejy ' . intdiv($counterResults, 10) . '</div>';
-
+                                    echo '<div id="nbr-recherche" class="text-dark"> Valiny ' . $counterResults . ' no hita </div>';
+                                    echo '<div id="nbr-page" class="text-dark"> Isan\' ny pejy ' . intdiv($counterResults, 10) . '</div>';
                                 }
                             }
                             
