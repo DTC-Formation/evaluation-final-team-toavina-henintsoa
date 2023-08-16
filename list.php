@@ -74,7 +74,7 @@
                             if (isset($_GET['search']))
                             {
                                 $counterResults = 0;
-                                $search = $_GET['search'];
+                                $search = strtolower($_GET['search']);
                                 for ($line=0; $line < count($table); $line++)
                                 {
                                     if ( in_array($search, $table[$line]) ){
@@ -89,7 +89,9 @@
                                 }
                                 if ( $counterResults > 0)
                                 {
-                                    echo '<div id="valiny"> Valiny ' . $counterResults . ' no hita </div>';
+                                    echo '<div id="nbr-recherche"> Valiny ' . $counterResults . ' no hita </div>';
+                                    echo '<div id="nbr-page"> Isan\' ny pejy ' . intdiv($counterResults, 10) . '</div>';
+
                                 }
                             }
                             

@@ -20,7 +20,7 @@
 
         // On copie la ligne dans la table
         for($i=0; $i<6; $i++) {
-            $table[$index] [$i] = $row[$i];
+            $table[$index] [$i] = strtolower($row[$i]);
         }
 
         // On incremente la position la taille du tableau

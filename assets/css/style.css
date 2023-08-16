@@ -16,6 +16,10 @@ h1{
 .row{
 	margin: 20px;
 }
+
+td{
+	text-transform: capitalize;
+}
 .wrapper{
 	position: relative;
 }
