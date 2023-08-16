@@ -35,7 +35,7 @@
     <div class="container" id="content-list">
         <div class="col-12">  <!-- conteneur an'izy rehetra mitambatra titre-barre de recherche-tableau-->
                 <div class="row">
-                    <a href="index.html"><i class="bi bi-arrow-left"> Miverina </i></a>
+                    <a href="./index.php"><i class="bi bi-arrow-left"> Miverina </i></a>
                 </div>
                     <!-- Titre-->
                 <div class="row">
@@ -75,10 +75,7 @@
                             for ($line=0; $line < count($table); $line++) {
                                 echo '<tr>';
                                 for ($column=0; $column <6; $column++) {
-                                    if ($column === 0) {
-                                        echo '<th>' . $table[$line][$column] . '</th>';
-                                        continue;
-                                    }
+                                    // if ($column === 0) {
                                     echo '<td>' . $table[$line][$column]. '</td>';                           
                                 }
                                 echo '</tr>';
