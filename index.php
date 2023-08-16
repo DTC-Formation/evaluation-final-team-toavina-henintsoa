@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<!-- script-->
 	<script type="text/javascript" src="./assets/js/jquery.js"></script>
-	<script type="text/javascript" src="./assets/js/index.js"></script>
+	<script type="text/javascript" src="./assets/js/index.js" defer></script>
 	<script type="text/javascript" src="./assets/bootstrap/bootstrap5/js/bootstrap.min.js"></script>
 	<!-- bootstrap icons files-->
 	<link rel="stylesheet" type="text/css" href="./assets/bootstrap/bootstrap-icons/bootstrap-icons.css">
@@ -36,7 +36,7 @@
 				<div class="col-lg-4 col-md-4 col-xs-6 offset-lg-4 offset-md-4">
 					<div class="input-group mb-3">
 					   <input type="text" class="form-control ">
-					   <a href="list.html"><button type="button" class="btn btn-primary"><span class="bi bi-search"></span></button></a>
+					   <a href="list.php"><button type="button" class="btn btn-primary"><span class="bi bi-search"></span></button></a>
 				  	</div>
 	
 				</div>
