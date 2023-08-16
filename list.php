@@ -61,12 +61,11 @@
                 
                         <thead class="bg-dark text-light">
                           <tr>
-                            <th > N° </th>
-                            <th > Fokontany </th>
-                            <th > Kaominina </th>                            
-                            <th >Faritra </th>
-                            <th > Region </th>
-                            <th>Province</th>
+                            <?php
+                                for ($i=0; $i < count($title); $i++) {
+                                    echo '<th>' . $title[$i] . '</th>';
+                                }
+                            ?>
                           </tr>
                         </thead>
                         <tbody>
@@ -75,7 +74,6 @@
                             for ($line=0; $line < count($table); $line++) {
                                 echo '<tr>';
                                 for ($column=0; $column <6; $column++) {
-                                    // if ($column === 0) {
                                     echo '<td>' . $table[$line][$column]. '</td>';                           
                                 }
                                 echo '</tr>';
