@@ -1,6 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 body{
-	margin: 0px!important;
+	margin : 0px!important;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: large;
+	font-weight: 400;
+	color: black;
+	background: #EDEDE9;
+
 }
+h1{
+	font-weight: bold;
+}
+
 .row{
 	margin: 20px;
 }
@@ -16,6 +28,12 @@ body{
 .navbar-brand{
 	color:white;
 }
+.item img{
+	border-radius: 20px;
+}
+#tableau{
+	background: #F8F9FA;
+}
 
 @media only screen and (max-width:600px){
 	.sidebar{
@@ -28,6 +46,13 @@ body{
 	#content-list{
 		position: relative;
 	}
+	.item{
+		margin-top : 10px;
+		margin-bottom: 10px;
+	}
+	#home{
+		margin-top: 70px;
+	}
 }
 @media only screen and (min-width:768px){
 	.sidebar{
@@ -38,6 +63,12 @@ body{
 	}
 	#content-list{
 		position: relative;
+	}
+	#home{
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 }
 @media only screen and (min-width:992px){
@@ -51,4 +82,12 @@ body{
 		position: relative;
 
 	}
+	#home{
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 60px;
+	}
 }
+
