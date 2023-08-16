@@ -83,7 +83,7 @@
                                             echo '<td>' . $table[$line][$column]. '</td>';                           
                                         }
                                         echo '</tr>';
-                                    }                                    
+                                    }
                                 }
                             }
                             
