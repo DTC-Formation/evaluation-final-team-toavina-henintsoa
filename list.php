@@ -10,9 +10,10 @@
         <!-- css-->
         <link rel="stylesheet" type="text/css" href="./assets/bootstrap/bootstrap5/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/loader.css">
         <!-- script-->
         <script type="text/javascript" src="./assets/js/jquery.js"></script>
-        <script type="text/javascript" src="./assets/js/index.js"></script>
+        <script type="text/javascript" src="./assets/js/index.js" defer></script>
         <script type="text/javascript" src="./assets/bootstrap/bootstrap5/js/bootstrap.min.js"></script>
         <!-- bootstrap icons files-->
         <link rel="stylesheet" type="text/css" href="./assets/bootstrap/bootstrap-icons/bootstrap-icons.css">
@@ -49,7 +50,7 @@
                 <div class="col-lg-4 col-md-4 col-xs-6 offset-lg-4 offset-md-3 offset-xs-3 ">
                     <form class="d-flex" method="GET" role="search">
                         <input class="form-control me-2" name="search" type="search" placeholder="Soraty eo ny toerana ho tadiavina">
-                        <button class="btn btn-outline-dark" type="submit"><span class="bi bi-search"></span></button>
+                        <button class="btn btn-outline-dark" type="submit" id="search"><span class="bi bi-search"></span></button>
                       </form>
                 </div>
             </div>
@@ -101,6 +102,10 @@
             </div>
         </div>
 
+    </div>
+
+    <div id="container-loader">
+        <div id="loader"></div>
     </div>
 </body>
 </html>

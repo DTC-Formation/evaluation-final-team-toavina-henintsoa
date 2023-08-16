@@ -8,6 +8,7 @@
 	<!-- css-->
 	<link rel="stylesheet" type="text/css" href="./assets/bootstrap/bootstrap5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/loader.css">
 	<!-- script-->
 	<script type="text/javascript" src="./assets/js/jquery.js"></script>
 	<script type="text/javascript" src="./assets/js/index.js" defer></script>
