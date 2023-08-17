@@ -91,7 +91,7 @@
                                 if ( $counterResults > 0)
                                 {
                                     echo '<div id="nbr-recherche" class="text-dark"> Valiny ' . $counterResults . ' no hita </div>';
-                                    echo '<div id="nbr-page" class="text-dark"> Isan\' ny pejy ' . intdiv($counterResults, 10) . '</div>';
+                                    // echo '<div id="nbr-page" class="text-dark"> Isan\' ny pejy ' . intdiv($counterResults, 10) . '</div>';
                                 }
                             }
                             
